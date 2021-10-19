@@ -16,5 +16,6 @@ public class Main {
 		context = new ClassPathXmlApplicationContext("ApplicationContext.xml");
 		Computer computer = context.getBean("computer", Computer.class);
 		System.out.println(computer);
+		System.out.println("Total Price " + computer.getTotalPriceComponents());
 	}
 }
