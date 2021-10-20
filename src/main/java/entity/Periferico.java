@@ -1,6 +1,6 @@
 package entity;
 
-public class Periferico {
+public abstract class Periferico {
 
 	private static int countId;
 	private int id;

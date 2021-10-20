@@ -32,6 +32,12 @@
 		<property name="generacion" value="16"></property>
 	</bean>
 	
+	<bean id="ram4" class="entity.Ram">
+		<property name="precio" value="350"></property> 
+		<property name="hz" value="70"></property>
+		<property name="generacion" value="16"></property>
+	</bean>
+	
 	<bean id="listRam" class="java.util.ArrayList">
 		<constructor-arg>
 			<list value-type="entity.Ram">
@@ -51,7 +57,7 @@
 	<!-- Tarjetas Graficas -->
 	<bean id="grafica1" class="entity.TarjetaGrafica">
 		<property name="marca" value="Nvidia"></property>
-		<property name="ram" ref="ram3"></property>
+		<property name="ram" ref="ram4"></property>
 		<property name="modelo" value="GTX7000"></property>
 		<property name="precio" value="1000"></property>
 	</bean>
